@@ -6,7 +6,7 @@ target 'AudioHelper' do
   use_frameworks!
 
   # Pods for AudioHelper
-    
+  
     pod 'StarIO', '2.7.0'
     pod 'StarIO_Extension', '1.14.0'
     pod 'SMCloudServices', '1.5.1'
