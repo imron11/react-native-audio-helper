@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CAFD8B3350F9AEBC081B03E /* Pods_AudioHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293663C723FF6C220C25DA58 /* Pods_AudioHelper.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* AudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AudioHelper.m */; };
 		DF6A99CA23E92318002425D4 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6A99AB23E92313002425D4 /* libReact.a */; };
 		DF6A99CD23E927F1002425D4 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A99CC23E927F1002425D4 /* AudioHelper.swift */; };
@@ -141,10 +140,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11FFB17C4B4CAF63E253F509 /* Pods-AudioHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioHelper.debug.xcconfig"; path = "Target Support Files/Pods-AudioHelper/Pods-AudioHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libAudioHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudioHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F52733A7272BDA742898D2 /* Pods-AudioHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioHelper.release.xcconfig"; path = "Target Support Files/Pods-AudioHelper/Pods-AudioHelper.release.xcconfig"; sourceTree = "<group>"; };
-		293663C723FF6C220C25DA58 /* Pods_AudioHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5891CC2AC0600A0062D /* AudioHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioHelper.m; sourceTree = "<group>"; };
 		DF6A999723E92311002425D4 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		DF6A99CB23E927F1002425D4 /* AudioHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioHelper-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -157,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6A99CA23E92318002425D4 /* libReact.a in Frameworks */,
-				5CAFD8B3350F9AEBC081B03E /* Pods_AudioHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +182,6 @@
 		9B84E55BA9EF228CAA339BA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				11FFB17C4B4CAF63E253F509 /* Pods-AudioHelper.debug.xcconfig */,
-				27F52733A7272BDA742898D2 /* Pods-AudioHelper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				DF6A999723E92311002425D4 /* React.xcodeproj */,
-				293663C723FF6C220C25DA58 /* Pods_AudioHelper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,7 +224,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "AudioHelper" */;
 			buildPhases = (
-				A67D0765C6252EE1547DC546 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -400,31 +391,6 @@
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A67D0765C6252EE1547DC546 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AudioHelper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -533,7 +499,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11FFB17C4B4CAF63E253F509 /* Pods-AudioHelper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -556,7 +521,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27F52733A7272BDA742898D2 /* Pods-AudioHelper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
